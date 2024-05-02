@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestCompteBancaire {
 
+    // Test Débiter solde 1
     @Test
     void testdebiterSolde() {
         CompteBancaire compte = new CompteBancaire();
         assertEquals(compte.debiterSolde(100, 1000), 900);
     }
 
+    // Test Débiter solde 2
     @Test
     void testdebiterSoldeInférieur() {
         CompteBancaire compte = new CompteBancaire();
